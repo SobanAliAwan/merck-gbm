@@ -33,7 +33,7 @@ for this specific clinical problem.
 
 **Soban Ali Awan**  
 Institute of Management and Sciences, Peshawar  
-Research Mentor: Claude (Anthropic)
+
 
 ## Status
 
@@ -48,4 +48,4 @@ Research Mentor: Claude (Anthropic)
 
 ## Citation
 
-*Paper under preparation — IEEE Access 2026*
+*Paper under preparation — Target: High-impact peer-reviewed journal (2026)*
