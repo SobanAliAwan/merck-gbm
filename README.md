@@ -29,23 +29,22 @@ for this specific clinical problem.
 - **Primary:** BraTS 2023 Adult Glioma (1,251 cases)
 - **External Validation:** BraTS-Africa (~60 cases)
 
-## Current Results — Baseline 3D U-Net (B1)
+## Results — Baseline 3D U-Net (B1) ✅ COMPLETE
 
 | Region | Dice Score |
 |--------|------------|
-| Whole Tumor (WT) | 0.9132 |
-| Tumor Core (TC) | 0.8912 |
-| Enhancing Tumor (ET) | 0.8331 |
-| **Mean** | **0.8792** |
+| Whole Tumor (WT) | 0.9226 |
+| Tumor Core (TC) | 0.9076 |
+| Enhancing Tumor (ET) | 0.8516 |
+| **Mean** | **0.8940** |
 
-*Epoch 46/100 — Training in progress*
+*100 epochs complete — Best at epoch 92*
 
 ## Research Progress
 
 - [x] Environment setup
-- [x] Data pipeline verified (BraTS 2023 GLI, 1251 cases)
-- [x] Baseline 3D U-Net training (epoch 46/100, Dice 0.8792)
-- [ ] Baseline training complete (epoch 100)
+- [x] Data pipeline verified (BraTS 2023 GLI, 1,251 cases)
+- [x] Baseline 3D U-Net — 100 epochs complete (Mean Dice 0.8940)
 - [ ] Swin UNETR teacher network
 - [ ] MERCK modality adapters
 - [ ] Evidential uncertainty head
@@ -55,8 +54,8 @@ for this specific clinical problem.
 ## Key Technical Notes
 
 - BraTS 2023 uses labels 1,2,3 (not 1,2,4 as in older versions)
-- Output: 3-channel sigmoid (WT/TC/ET) not 4-channel softmax
-- Training: AdamW lr=1e-4, cosine annealing, mixed precision
+- Output: 3-channel sigmoid (WT/TC/ET) — overlapping regions
+- Training: AdamW lr=1e-4, cosine annealing, mixed precision, 100 epochs
 - Hardware: Kaggle T4 GPU, ~22 min/epoch
 
 ## Author
